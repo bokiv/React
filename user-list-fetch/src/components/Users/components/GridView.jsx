@@ -11,7 +11,7 @@ export const GridView = ({users}) => {
         <div className="col s2 m4 row">
           <div className="card">
             <div className="card-image">
-              <img src={element.picture.large} />
+              <img src={element.picture.large}  alt=""/>
               <span className="card-title">{element.name.first}</span>
             </div>
             <div className="card-content">

@@ -16,19 +16,19 @@ export class Users extends React.Component {
 
   }
   componentDidMount(){
-    getUsers().then(users => this.setState({users}))
+    getUsers().then(users => this.setState({users : users}))
   }
 
 
   render (){
     console.log(this.state.users);
 
-    return (
+    return  (
       this.props.isListView
       ? <ListView users={this.state.users}/> 
       : <GridView users={this.state.users}/>
-    );
-    };
-  }
+    )};
+    
+}
 
     
