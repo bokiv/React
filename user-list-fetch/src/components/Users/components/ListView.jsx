@@ -10,7 +10,10 @@ export const ListView = ({users}) => {
        (element) => ( 
     <li className="collection-item avatar">
       <img src={element.picture.thumbnail} alt="" className="circle"/>
-      <span className="title">{element.name.first}</span>
+      <span className="title">{"name: " + element.name.first}</span>
+      <p> {"email: " + element.email}</p>
+     <p> {"date of birth: " +element.dob.date.slice(0, 10).split("-").reverse().join("-")}</p>
+        
       <a href="#!" className="secondary-content"></a>
     </li>
     ))

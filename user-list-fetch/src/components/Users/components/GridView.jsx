@@ -15,8 +15,8 @@ export const GridView = ({users}) => {
               <span className="card-title">{element.name.first}</span>
             </div>
             <div className="card-content">
-              <p> {element.email}</p>
-              <p> {element.dob.date}</p>
+              <p> {"email: " + element.email}</p>
+              <p> {"date of birth: " + element.dob.date.slice(0, 10).split("-").reverse().join(".")}</p>
             </div>
           </div>
            </div>

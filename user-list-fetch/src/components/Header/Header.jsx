@@ -5,10 +5,14 @@ export const Header = ({ isListView, onLayoutToggle }) => {
   return (
     <nav>
       <div className="nav-wrapper">
-        <a href="#!" className="brand-logo"></a>
+      <a href="#" class="brand-logo center">React Users</a>
         <a className="waves-effect waves-light btn" onClick={onLayoutToggle}>
           {" "}
           {isListView ? "List View" : "Grid View"}{" "}
+        </a>
+        <a className="waves-effect waves-light btn">OnRefresh
+          {" "}
+          
         </a>
       
       </div>
